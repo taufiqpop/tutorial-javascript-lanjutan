@@ -34,6 +34,18 @@ const angka = [-1, 8, 9, 1, 4, -5, -4, 3, 2, 9];
 // reduce (punya 2 parameter)
 // jumlahkan seluruh elemen pada array
 // 0 + -1 + 8 + 9 + 1 + 4 + -5 + -4 + 3 + 2 + 9
-const newAngka = angka.reduce((accumulator, currentValue) => accumulator + currentValue);
+// const newAngka = angka.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
-console.log(newAngka);
+// console.log(newAngka);
+
+
+// Method Chaining
+// cari angka > 5
+// kalikan 3
+// jumlahkan
+
+const hasil = angka.filter(a => a > 5) // 8, 9, 9
+    .map(a => a * 3) // 24, 27, 27
+    .reduce((acc, cur) => acc + cur, 0); // 78
+
+console.log(hasil);
