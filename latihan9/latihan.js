@@ -35,7 +35,7 @@
 //         <li>${m.nama}</li>
 //         <li>${m.email}</li>
 //         </ul>
-//     `).join(" ")}
+//     `).join("")}
 // </div>`;
 
 // document.body.innerHTML = el;
@@ -51,7 +51,7 @@
 // const el = `<div class="lagu">
 //     <ul>
 //         <li>Judul Lagu: ${lagu.judul}</li>
-//         <li>Penyanyi: ${lagu.penyanyi} ${lagu.feat ? `(feat. ${lagu.feat})` : " "}</li>
+//         <li>Penyanyi: ${lagu.penyanyi} ${lagu.feat ? `(feat. ${lagu.feat})` : ""}</li>
 //     </ul>
 // </div>`;
 

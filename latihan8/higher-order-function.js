@@ -31,7 +31,10 @@ const newAngka = angka.map (a => a * 2);
 console.log(newAngka);
 
 
-// reduce (punya 2 parameter) ==> accumulator & currentValue
+// reduce (punya 2 parameter) ==> accumulator & currentValue, (parameter opsional: index)
+// accumulator => menggabungkan seluruh isi array / result-nya
+// currentValue => element yg akan digabungkan / str-nya
+// index => index / i
 // jumlahkan seluruh elemen pada array
 // 0 + -1 + 8 + 9 + 1 + 4 + -5 + -4 + 3 + 2 + 9
 const newAngka = angka.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
