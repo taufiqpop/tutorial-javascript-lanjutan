@@ -1,7 +1,7 @@
 // 2.1 xecution Context, Hoisting, Scope
 
-// console.log(nama);
-// var nama = "Pop";
+console.log(nama);
+var nama = "Pop";
 
 // 1. creation phase pada Global Context
 // nama var = undefined
@@ -13,12 +13,12 @@
 // 2. Execution phase
 // console.log(sayHello());
 
-// var nama = "Pop";
-// var umur = 21;
+var nama = "Pop";
+var umur = 21;
 
-// function sayHello () {
-//     return `Halo, nama saya ${nama}, saya umur ${umur} tahun.`;
-// };
+function sayHello () {
+    return `Halo, nama saya ${nama}, saya umur ${umur} tahun.`;
+};
 
 // function membuat Local Execution Context
 // yang di dalamnya terdapat creation dan execution phase

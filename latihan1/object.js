@@ -1,4 +1,4 @@
-// Cara membuat objek pada javascript
+// Cara membuat object pada javascript
 // 1. Object Literal
 let mahasiswa1 = {
     nama: "Taufiq Pop",
@@ -19,26 +19,23 @@ let mahasiswa2 = {
 }
 
 // 2. Function Declaration
-// function Mahasiswa (nama, energi) {
-//     let mahasiswa = {};
-//     mahasiswa.nama = nama;
-//     mahasiswa.energi = energi;
+function Mahasiswa (nama, energi) {
+    let mahasiswa = {};
+    mahasiswa.nama = nama;
+    mahasiswa.energi = energi;
 
-//     mahasiswa.makan = function (porsi) {
-//         this.energi += porsi;
-//         console.log(`Halo ${this.nama}, selamat makan!`);
-//     }
+    mahasiswa.makan = function (porsi) {
+        this.energi += porsi;
+        console.log(`Halo ${this.nama}, selamat makan!`);
+    }
 
-//     mahasiswa.main = function (jam) {
-//         this.energi -= jam;
-//         console.log(`Halo ${this.nama}, selamat bermain!`);
-//     }
+    mahasiswa.main = function (jam) {
+        this.energi -= jam;
+        console.log(`Halo ${this.nama}, selamat bermain!`);
+    }
 
-//     return mahasiswa;
-// }
-
-// let Lala = Mahasiswa("Lala", 10);
-// let Pop = Mahasiswa("Pop", 9);
+    return mahasiswa;
+}
 
 // 3. Constructor Funtion
 function Mahasiswa (nama, energi) {
@@ -56,6 +53,8 @@ function Mahasiswa (nama, energi) {
     }
 }
 
+let Pop = Mahasiswa("Pop", 9);
 let Lala = new Mahasiswa("Lala", 20);
+
 // 4. object.create
 // ==>> next latihan 2

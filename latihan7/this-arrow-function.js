@@ -3,37 +3,37 @@
 
 
 // constructor function
-// const Mahasiswa = function () {
-//     this.nama = "Taufiq Pop";
-//     this.umur = 21;
-//     this.sayHello = function () {
-//         console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
-//     }
-// }
+const Mahasiswa = function () {
+    this.nama = "Taufiq Pop";
+    this.umur = 21;
+    this.sayHello = function () {
+        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
+    }
+}
 
-// const Pop = new Mahasiswa();
+const Pop = new Mahasiswa();
+
 
 // Arrow Function
-// const Mahasiswa = function () {
-//     this.nama = "Taufiq Pop";
-//     this.umur = 21;
-//     this.sayHello = () => {
-//         console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
-//     }
-// }
+const Mahasiswa = function () {
+    this.nama = "Taufiq Pop";
+    this.umur = 21;
+    this.sayHello = () => {
+        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
+    }
+}
 
-// const Pop = new Mahasiswa();
+const Pop = new Mahasiswa();
 
 
 // Object Literal
-// const mhs1 = {
-//     nama: "Taufiq Pop",
-//     umur: 21,
-//     sayHello: function () {
-//         console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
-//     }
-// }
-
+const mhs1 = {
+    nama: "Taufiq Pop",
+    umur: 21,
+    sayHello: function () {
+        console.log(`Halo, nama saya ${this.nama}, dan saya ${this.umur} tahun.`);
+    }
+}
 
 
 // Masih bingung, coba contoh lain
@@ -49,4 +49,4 @@ const Mahasiswa = function () {
     }, 500);
 }
 
-const pop = new Mahasiswa();
+const Pop = new Mahasiswa();

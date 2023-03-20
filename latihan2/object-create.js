@@ -1,5 +1,5 @@
 // 2. Function Declaration (Lebih Efektif)
-// Object.create
+// Menggunakan object.create
 
 const methodMahasiswa = {
     makan : function (porsi) {

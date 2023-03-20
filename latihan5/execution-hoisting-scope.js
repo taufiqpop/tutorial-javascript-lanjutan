@@ -1,31 +1,28 @@
 // 2.2 Closure
-// function init () {
-//     // let nama = "Taufiq Pop";
-//     return function (nama) {
-//         console.log(nama);
-//     }
-// };
+function init () {
+    // let nama = "Taufiq Pop";
+    return function (nama) {
+        console.log(nama);
+    }
+};
 
-// let panggilNama = init();
-// panggilNama("Lala");
-// panggilNama("Pop");
-
-
+let panggilNama = init();
+panggilNama("Lala");
+panggilNama("Pop");
 
 
 // Contoh 2
-// function ucapkanSalam (waktu) {
-//     return function (nama) {
-//         console.log(`Halo ${nama}, Selamat ${waktu}, Semoga Harimu Menyenangkan!`);
-//     };
-// };
+function ucapkanSalam (waktu) {
+    return function (nama) {
+        console.log(`Halo ${nama}, Selamat ${waktu}, Semoga Harimu Menyenangkan!`);
+    };
+};
 
-// let selamatPagi = ucapkanSalam("Pagi");
-// let selamatSiang = ucapkanSalam("Siang");
-// let selamatMalam = ucapkanSalam("Malam");
+let selamatPagi = ucapkanSalam("Pagi");
+let selamatSiang = ucapkanSalam("Siang");
+let selamatMalam = ucapkanSalam("Malam");
 
-// console.dir(selamatMalam("Lala"));
-
+console.dir(selamatMalam("Lala"));
 
 
 // Contoh 3
