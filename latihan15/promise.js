@@ -1,30 +1,30 @@
 // JQuery
-// $.ajax({
-//     url: 'http://www.omdbapi.com/?apikey=dca61bcc&s=avengers',
-//     success: movies => console.log(movies)
-// });
+$.ajax({
+    url: 'http://www.omdbapi.com/?apikey=dca61bcc&s=avengers',
+    success: movies => console.log(movies)
+});
 
 // Vanilla JavaScript
-// const xhr = new XMLHttpRequest();
-// xhr.onreadystatechange = function () {
-//     if (xhr.status === 200) {
-//         if(xhr.readyState === 4) {
-//             console.log(JSON.parse(xhr.response));
-//         }
-//     }
-//     else {
-//         console.log(xhr.responseText);
-//     }
-// }
+const xhr = new XMLHttpRequest();
+xhr.onreadystatechange = function () {
+    if (xhr.status === 200) {
+        if(xhr.readyState === 4) {
+            console.log(JSON.parse(xhr.response));
+        }
+    }
+    else {
+        console.log(xhr.responseText);
+    }
+}
 
-// xhr.open('get', 'http://www.omdbapi.com/?apikey=dca61bcc&s=avengers');
-// xhr.send();
+xhr.open('get', 'http://www.omdbapi.com/?apikey=dca61bcc&s=avengers');
+xhr.send();
 
 
 // FETCH
-// fetch('http://www.omdbapi.com/?apikey=dca61bcc&s=avengers')
-//     .then(response => response.json())
-//     .then(response => console.log(response));
+fetch('http://www.omdbapi.com/?apikey=dca61bcc&s=avengers')
+    .then(response => response.json())
+    .then(response => console.log(response));
 
 
 // PROMISE
@@ -35,43 +35,43 @@
 // aksi (then / catch)
 
 // Contoh 1 (sederhana)
-// let ditepati = true;
-// const janji1 = new Promise((resolve, reject) => {
-//     if (ditepati) {
-//         resolve('Janji telah ditepati!');
-//     }
-//     else {
-//         reject('Ingkar janji..');
-//     }
-// });
+let ditepati = true;
+const janji1 = new Promise((resolve, reject) => {
+    if (ditepati) {
+        resolve('Janji telah ditepati!');
+    }
+    else {
+        reject('Ingkar janji..');
+    }
+});
 
-// janji1
-//     .then(response => console.log('OK! : ' + response))
-//     .catch(response => console.log('NOT OK! : ' + response));
+janji1
+    .then(response => console.log('OK! : ' + response))
+    .catch(response => console.log('NOT OK! : ' + response));
 
 
 // Contoh 2
-// let ditepati = true;
-// const janji2 = new Promise((resolve, reject) => {
-//     if (ditepati) {
-//         setTimeout(() => {
-//             resolve('Ditepati setelah beberapa waktu!');
-//         }, 2000);
-//     }
-//     else {
-//         setTimeout(() => {
-//             resolve('Tidak ditepati setelah beberapa waktu!');
-//         }, 2000);
-//     }
-// });
+let ditepati = true;
+const janji2 = new Promise((resolve, reject) => {
+    if (ditepati) {
+        setTimeout(() => {
+            resolve('Ditepati setelah beberapa waktu!');
+        }, 2000);
+    }
+    else {
+        setTimeout(() => {
+            resolve('Tidak ditepati setelah beberapa waktu!');
+        }, 2000);
+    }
+});
 
-// console.log('mulai');
-// // console.log(janji2.then(() => console.log(janji2))); // biar tau proses pendingnya
-// janji2
-//     .finally(() => console.log('selesai menunggu!'))
-//     .then(response => console.log('OK! : ' + response))
-//     .catch(response => console.log('NOT OK! : ' + response));
-// console.log('selesai');
+console.log('mulai');
+// console.log(janji2.then(() => console.log(janji2))); // biar tau proses pendingnya
+janji2
+    .finally(() => console.log('selesai menunggu!'))
+    .then(response => console.log('OK! : ' + response))
+    .catch(response => console.log('NOT OK! : ' + response));
+console.log('selesai');
 
 
 // Promise.all()
